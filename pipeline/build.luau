@@ -58,7 +58,7 @@ local selectedIdx = io.prompt("select", "Build configuration", configNames)
 local baseOptions = buildConfigs[selectedIdx]
 
 currentBuildConfig = baseOptions.name
-currentVersion = baseOptions.promptVersion and io.prompt("text", "Build version (vMAJOR.MINOR.PATCH)") or "v0.0.0"
+currentVersion = baseOptions.promptVersion and io.prompt("text", "Build version (vMAJOR.MINOR.PATCH)") or "0.0.0"
 
 -- Tasks
 local tasks = { baseOptions }

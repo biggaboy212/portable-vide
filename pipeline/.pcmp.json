@@ -18,9 +18,9 @@
       "promptDeploy": false,
 
       "frame": "pipeline/frame.luau",
-      "darkluaConfig": "pipeline/darklua_cfgs/debug.json",
+      "darkluaConfig": "pipeline/darklua_cfgs/unminified.json",
       "input": "init.luau",
-      "output": "generated/debug/debug.luau"
+      "output": "generated/debug/vide.luau"
     },
 
     {
@@ -33,13 +33,18 @@
       "frame": "pipeline/frame.luau",
       "darkluaConfig": "pipeline/darklua_cfgs/stable.json",
       "input": "init.luau",
-      "output": "generated/beta/beta.luau",
+      "output": "generated/beta/vide.luau",
 
       "variants": [
         {
           "name": "Typed",
           "darkluaConfig": "pipeline/darklua_cfgs/typed.json",
-          "output": "generated/beta/beta-typed.luau"
+          "output": "generated/beta/vide-typed.luau"
+        },
+        {
+          "name": "Unminified",
+          "darkluaConfig": "pipeline/darklua_cfgs/unminified.json",
+          "output": "generated/beta/vide-unminified.luau"
         }
       ]
     },
@@ -53,13 +58,18 @@
       "frame": "pipeline/frame.luau",
       "darkluaConfig": "pipeline/darklua_cfgs/stable.json",
       "input": "init.luau",
-      "output": "generated/release/release.luau",
+      "output": "generated/release/vide.luau",
 
       "variants": [
         {
           "name": "Typed",
           "darkluaConfig": "pipeline/darklua_cfgs/typed.json",
-          "output": "generated/release/release-typed.luau"
+          "output": "generated/release/vide-typed.luau"
+        },
+        {
+          "name": "Unminified",
+          "darkluaConfig": "pipeline/darklua_cfgs/unminified.json",
+          "output": "generated/release/vide-unminified.luau"
         }
       ]
     }

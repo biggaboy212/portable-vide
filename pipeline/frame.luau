@@ -2,8 +2,10 @@
 --!nolint
 
 --[[
-    @authors biggaboy212
+    @author biggaboy212
     @repository portable-vide
+    @build __COMPOSER.Insert(__COMPOSER.cfg)
+    @version __COMPOSER.Insert(__COMPOSER.vers)
 
     This file was automatically generated with darklua, it is not intended for manual editing.
 --]]
