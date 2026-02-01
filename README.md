@@ -27,10 +27,11 @@ Releases are provided at: [portable-vide/releases](https://github.com/biggaboy21
 >
 > `vide-unminified.luau` - Is not minified and contains types. Raw bundle output.
 
-### Loading the latest release via HTTP
+### Loading a release via HTTP
 
 ```luau
-local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/portable-vide/releases/latest/download/vide.luau`))
+local version = "0.4.0"
+local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/portable-vide/releases/download/{version}/vide.luau`))
 ```
 
 ## Code sample
