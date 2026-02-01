@@ -31,7 +31,7 @@ Releases are provided at: [portable-vide/releases](https://github.com/biggaboy21
 
 ```luau
 local version = "0.4.0"
-local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/portable-vide/releases/download/{version}/vide.luau`))
+local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/portable-vide/releases/download/{version}/vide.luau`))()
 ```
 
 ## Code sample
