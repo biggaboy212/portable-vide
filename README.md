@@ -20,19 +20,18 @@ for a quick introduction to the library.
 
 Releases are provided at: [portable-vide/releases](https://github.com/biggaboy212/portable-vide/releases)
 
-### Loading a release via HTTP
+> [!NOTE]
+> By default, vide.luau is minified for performance and fetch times. If you need specific features, you can fetch these variants instead:
+>
+> `vide-typed.luau` - Includes types
+>
+> `vide-unminified.luau` - Is not minified and contains types. Raw bundle output.
+
+### Loading the latest release via HTTP
 
 ```luau
-local version = "0.4.0"
-local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/Cascade/releases/download/{version}/release.luau`))
+local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/portable-vide/releases/latest/download/vide.luau`))
 ```
-
-> We also provide typed versions of each release
->
-> ```luau
-> local version = "0.4.0"
-> local vide = loadstring(game:HttpGet(`https://github.com/biggaboy212/Cascade/releases/download/{version}/release-typed.luau`))
-> ```
 
 ## Code sample
 
