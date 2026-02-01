@@ -19,6 +19,7 @@
 		"remove_function_call_parens",
 		"remove_nil_declaration",
 		"remove_spaces",
+		"remove_types",
 		"remove_unused_if_branch",
 		"remove_if_expression",
 		"remove_unused_variable",
