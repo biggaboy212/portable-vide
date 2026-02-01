@@ -1,4 +1,4 @@
-local typeof = game and typeof or require "../test/mock".typeof :: never
+local typeof = require "../test/mock".typeof :: never
 
 local flags = require "./flags"
 local implicit_effect = require "./implicit_effect"
@@ -12,10 +12,7 @@ type Map<K, V> = { [K]: V }
 
 type Cache = {
     -- event listeners to connect after properties are set
-    events: Array<
-        | string -- 1. event name
-        | () -> () -- 2. listener
-    >,
+    events: Array<string | () -> ()>,
 
     -- actions to run after events are connected
     actions: Map<
@@ -34,7 +31,7 @@ type Cache = {
 
     -- each nested layer occupies two indexes: 1. table ref 2. nested depth
     -- e.g. { t1 = { t3 = {} }, t2 = {} } -> { t1, 1, t2, 1, t3, 2 }
-    nested_stack: { {} | number }
+    nested_stack: { {} | number } -- Ensure this is on one line or pipes are trailing
 }
 
 local free_cache: Cache?

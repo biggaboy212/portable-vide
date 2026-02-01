@@ -1,3 +1,5 @@
+.env
+
 .vscode
 _local
 
@@ -11,6 +13,7 @@ docs/package-lock.json
 luau_packages/
 lune_packages/
 .pesde/
+generated/
 
 wally.lock
 pesde.lock
